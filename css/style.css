@@ -5,6 +5,9 @@
 .navbar-brand{
   color: aliceblue !important;
 }
+.logo {
+  height: 41px;
+}
 
 .nav-link {
   color: aliceblue !important;
