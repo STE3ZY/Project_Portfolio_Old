@@ -1,0 +1,25 @@
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand{
+  color: aliceblue !important;
+}
+
+.nav-link {
+  color: aliceblue !important;
+}
+
+.fas {
+  color: aliceblue;
+}
+
+
+
+#hero {
+  background-image: url(../Images/hero-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 650px;
+}
