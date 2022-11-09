@@ -26,3 +26,43 @@
   height: 100vh;
   min-height: 650px;
 }
+ /* hello world */
+ #hello {
+  top: 0px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+}
+
+
+
+
+.box h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  color: #e3e6e9;
+  font-size: 6vw;
+  font-family: 'Orbitron', sans-serif;
+  
+
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+.box h1::after {
+  content: "";
+  width: 5px;
+  height: 5vw;
+  background: rgb(10, 235, 48);
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
