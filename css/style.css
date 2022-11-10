@@ -17,10 +17,16 @@ body{
 
 .nav-link {
   color: aliceblue !important;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .fas {
   color: aliceblue;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 
@@ -71,6 +77,23 @@ body{
   background: rgb(10, 235, 48);
   display: inline-block;
   animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+/* hero */
+.arrow-top i {
+  position: fixed;
+  bottom: 5%;
+  right: 7%;
+  color: #f7daa2;
+  font-size: 25px;
+  z-index: 0;
+}
+
+@media (min-width: 768px){
+.arrow-top i {
+  font-size: 37px;
+  right: 5%;
+}
 }
 
 /* about */
