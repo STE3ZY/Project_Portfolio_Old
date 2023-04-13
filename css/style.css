@@ -1,12 +1,10 @@
-body{
-  font-family: 'Noto Sans', sans-serif; 
+body {
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
 }
 .navbar {
   background-color: transparent !important;
-  
 }
-
 
 /* .navbar-brand{
   color: aliceblue !important;
@@ -30,8 +28,6 @@ body{
   border: none;
 }
 
-
-
 #hero {
   background-image: url(../Images/hero-bg2.jpg);
   background-size: cover;
@@ -39,8 +35,8 @@ body{
   height: 100vh;
   min-height: 650px;
 }
- /* hello world */
- #hello {
+/* hello world */
+#hello {
   top: 0px;
   width: 100%;
   position: absolute;
@@ -50,9 +46,6 @@ body{
   height: 100vh;
 }
 
-
-
-
 .box h1 {
   display: flex;
   justify-content: center;
@@ -60,9 +53,7 @@ body{
   gap: 2px;
   color: #e3e6e9;
   font-size: 6vw;
-  font-family: 'Orbitron', sans-serif;
-  
-
+  font-family: "Orbitron", sans-serif;
 }
 
 @keyframes cursor-blink {
@@ -90,35 +81,37 @@ body{
   z-index: 0;
 }
 
-@media (min-width: 768px){
-.arrow-top i {
-  font-size: 37px;
-  right: 5%;
-}
+@media (min-width: 768px) {
+  .arrow-top i {
+    font-size: 37px;
+    right: 5%;
+  }
 }
 
 /* about */
 #portfolio {
-background: linear-gradient(hsl(218, 33%, 22%), #0a1a16 90%);
-color: aliceblue;
-letter-spacing: 1px;
+  background: linear-gradient(hsl(218, 33%, 22%), #0a1a16 90%);
+  color: aliceblue;
+  letter-spacing: 1px;
 }
 
 h6 {
   font-size: x-large;
-  color:#f8d89f;
+  color: #f8d89f;
 }
 
-@media (min-width: 768px) and (max-width: 1200px){
-.title-text {
-  font-size: 95px !important;
-}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .title-text {
+    font-size: 95px !important;
+  }
 }
 
-@media (max-width: 768px){
-#portfolio .title-text, #about .title-text, #certificates .title-text {
-  font-size: 45px;
-}
+@media (max-width: 768px) {
+  #portfolio .title-text,
+  #about .title-text,
+  #certificates .title-text {
+    font-size: 45px;
+  }
 }
 
 .title-text {
@@ -136,11 +129,14 @@ h6 {
   text-decoration: none;
 }
 
+.tools {
+  font-size: 40px;
+  /* letter-spacing: 20px; */
+}
+
 .social-links-about i {
   font-size: 40px;
   letter-spacing: 20px;
-  
-
 }
 
 /* certificates */
@@ -152,17 +148,37 @@ h6 {
 footer {
   color: #e3e6e9;
   background-color: #0a1a16;
-  ;
 }
 
 .logo-footer {
   height: 100px;
 }
 
-footer a{
+footer a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-style: bold;
+}
+
+/* project images animations */
+
+.project-img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+/* certificate images border */
+
+.cert-img {
+  border: none;
+  transition: all 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+.cert-img:hover {
+  border: 1px solid #001aff; /* Change border style on hover */
 }
 
 /* load more projects animation */
@@ -240,7 +256,7 @@ footer a{
   border-radius: 10px;
 }
 
-#show-less-btn, #show-less-cert-btn {
+#show-less-btn,
+#show-less-cert-btn {
   display: none;
 }
-
