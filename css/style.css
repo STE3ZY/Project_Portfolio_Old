@@ -128,10 +128,26 @@ h6 {
 .about-text a {
   text-decoration: none;
 }
-
 .tools {
-  font-size: 40px;
-  /* letter-spacing: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools > figure > img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+}
+
+.tools > figure > img:hover {
+  transform: scale(1.1);
+}
+
+figcaption {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
 }
 
 .social-links-about i {
