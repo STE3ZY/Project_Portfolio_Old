@@ -131,11 +131,12 @@ h6 {
 .tools {
   display: flex;
   flex-wrap: wrap;
+  align-items: end;
 }
 
 .tools > figure > img {
   width: 64px;
-  height: 64px;
+  /* height: 64px; */
   margin: 10px;
 }
 
